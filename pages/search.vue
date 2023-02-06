@@ -122,7 +122,7 @@ const getPeople = async () => {
   loading.value = true;
   console.log(query.value);
   isFetching.value = true;
-  const res = await fetch(`http://localhost:8000/person/${query.value}`);
+  const res = await fetch(`https://movies-utzi.onrender.com/person/${query.value}`);
   if (!res.ok) {
     throw new Error("Error fetching data");
   }

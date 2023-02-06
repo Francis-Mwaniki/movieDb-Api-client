@@ -371,7 +371,7 @@ const getImg = async () => {
   loading.value = true;
   console.log(query.value);
   isFetching.value = true;
-  const res = await fetch(`http://localhost:8000/search/${query.value}`);
+  const res = await fetch(`https://movies-utzi.onrender.com/search/${query.value}`);
   if (!res.ok) {
     throw new Error("Error fetching data");
   }
@@ -393,7 +393,7 @@ const getImg = async () => {
 };
 const getTopRated = async () => {
   isFetching.value = true;
-  const res = await fetch("http://localhost:8000/top-rated");
+  const res = await fetch("https://movies-utzi.onrender.com/top-rated");
   if (!res.ok) {
     not_connected.value = true;
     throw new Error("Error fetching data");
@@ -410,7 +410,7 @@ const getTopRated = async () => {
 };
 const nowPlaying = async () => {
   isFetching.value = true;
-  const res = await fetch("http://localhost:8000/now");
+  const res = await fetch("https://movies-utzi.onrender.com/now");
   if (!res.ok) {
     not_connected.value = true;
     throw new Error("Error fetching data");
@@ -428,7 +428,7 @@ const nowPlaying = async () => {
 
 const getMostPopular = async () => {
   isFetching.value = true;
-  const res = await fetch("http://localhost:8000/popular");
+  const res = await fetch("https://movies-utzi.onrender.com/popular");
   if (!res.ok) {
     not_connected.value = true;
     throw new Error("Error fetching data");
