@@ -1,11 +1,12 @@
 <template>
-  <div class="pt-2 pb-24 md:pb-7 bg-black">
+  <div class="pt-2 pb-24 md:pb-7 bg-black mt-3">
     <footer
       class="footer p-5 text-neutral-content flex flex-row justify-center items-center"
     >
       <Icon name="ic:round-movie-filter" class="h-20 w-20 rounded text-orange-500" />
       <div>
         <p class="text-orange-600">Developed by.<br />Francis.Mwaniki</p>
+        <span class=" text-orange-600 underline"> <NuxtLink to="/docs">Docs</NuxtLink></span>
       </div>
       <div>
         <span class="footer-title text-lg font-serif text-orange-700">Social</span>
