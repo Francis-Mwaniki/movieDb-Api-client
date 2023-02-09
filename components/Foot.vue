@@ -6,7 +6,7 @@
       <Icon name="ic:round-movie-filter" class="h-20 w-20 rounded text-orange-500" />
       <div>
         <p class="text-orange-600">Developed by.<br />Francis.Mwaniki</p>
-        <span class=" text-orange-600 underline"> <NuxtLink to="/docs">Docs</NuxtLink></span>
+        <span class=" text-orange-600 underline"> <a href="https://github.com/Francis-Mwaniki/movieDB-Nuxt3-Nodejs">Docs</a></span>
       </div>
       <div>
         <span class="footer-title text-lg font-serif text-orange-700">Social</span>
